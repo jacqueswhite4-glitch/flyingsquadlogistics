@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flying Squad Auto Logistics – Nationwide vehicle transport across South Africa. Driven by Trust. Delivered with Precision.">
+    <title>Flying Squad Auto Logistics • Nationwide Vehicle Transport</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&family=Exo:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&family=Exo:wght@300;400;500&display=swap');
+        
+        :root {
+            --accent-red: #c8102e;
+        }
+        
+        body {
+            font-family: 'Exo', system-ui, sans-serif;
+        }
+        
+        .logo-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .truck-bg {
+            animation: drive 25s linear infinite;
+        }
+        
+        @keyframes drive {
+            0% { transform: translateX(-100px); }
+            100% { transform: translateX(2000px); }
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #c8102e;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px -12px rgb(200 16 46);
+        }
+        
+        .section-header {
+            position: relative;
+        }
+        
+        .section-header:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: #c8102e;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- NAVBAR -->
+    <nav class="bg-black/90 backdrop-blur-md border-b border-red-900/30 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-truck-fast text-4xl text-[#c8102e]"></i>
+                <h1 class="logo-font text-3xl font-semibold tracking-widest">
+                    FLYING <span class="text-[#c8102e]">SQUAD</span>
+                </h1>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-x-10 text-lg font-medium">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#how" class="nav-link">How It Works</a>
+                <a href="#quote" class="nav-link">Get Quote</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-x-4">
+                <a href="#quote" class="px-8 py-3 bg-[#c8102e] hover:bg-red-700 text-white font-semibold rounded-2xl flex items-center gap-2 shadow-lg shadow-red-900/50">
+                    <i class="fa-solid fa-calculator"></i>
+                    <span>Get Instant Quote</span>
+                </a>
+                
+                <!-- Theme Toggle (same as your original) -->
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="themeToggle" class="sr-only peer">
+                    <div class="w-11 h-6 bg-gray-700 rounded-full peer peer-checked:bg-[#c8102e]"></div>
+                    <div class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition peer-checked:translate-x-5"></div>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero-bg h-screen flex items-center relative">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center h-full">
+            <div class="space-y-8 z-10">
+                <div class="inline-flex items-center gap-3 px-6 py-3 bg-white/10 backdrop-blur rounded-3xl text-sm font-medium">
+                    🇿🇦 NATIONWIDE • SOUTH AFRICA
+                </div>
+                
+                <h1 class="text-7xl md:text-8xl font-black logo-font tracking-tighter leading-none">
+                    DRIVEN BY<br>TRUST.<br>DELIVERED WITH<br><span class="text-[#c8102e]">PRECISION.</span>
+                </h1>
+                
+                <p class="text-2xl text-gray-300 max-w-lg">
+                    Professional vehicle transport across South Africa.<br>
+                    Cars • Bikes • Fleet • Classic Cars
+                </p>
+                
+                <div class="flex gap-4">
+                    <a href="#quote" class="px-10 py-6 bg-[#c8102e] text-white text-2xl font-bold rounded-3xl hover:scale-105 flex items-center gap-3">
+                        GET QUOTE NOW
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="px-10 py-6 border-2 border-white/60 text-white text-2xl font-medium rounded-3xl hover:bg-white/10">
+                        CALL US 24/7
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-8 text-sm">
+                    <div>✅ Fully Insured</div>
+                    <div>✅ GPS Tracked</div>
+                    <div>✅ Door-to-Door</div>
+                </div>
+            </div>
+
+            <!-- Hero visual -->
+            <div class="hidden md:block relative">
+                <div class="text-[380px] leading-none font-black text-white/5 select-none">FS</div>
+                <div class="absolute top-12 right-8 bg-white/10 backdrop-blur-3xl rounded-3xl p-8 border border-red-900/30">
+                    <i class="fa-solid fa-truck-fast text-9xl text-[#c8102e]"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 text-white/60 flex flex-col items-center">
+            <i class="fa-solid fa-chevron-down animate-bounce text-4xl"></i>
+        </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center text-5xl font-black logo-font mb-16">Our Services</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card bg-black border border-red-900/30 rounded-3xl p-10 text-center">
+                    <i class="fa-solid fa-car text-6xl text-[#c8102e] mb-6"></i>
+                    <h3 class="text-3xl font-bold mb-3">Passenger Vehicles</h3>
+                    <p class="text-gray-400">Sedans, SUVs, bakkies – door-to-door nationwide.</p>
+                </div>
+                <div class="service-card bg-black border border-red-900/30 rounded-3xl p-10 text-center">
+                    <i class="fa-solid fa-motorcycle text-6xl text-[#c8102e] mb-6"></i>
+                    <h3 class="text-3xl font-bold mb-3">Motorcycles &amp; Bikes</h3>
+                    <p class="text-gray-400">Secure enclosed transport for your pride and joy.</p>
+                </div>
+                <div class="service-card bg-black border border-red-900/30 rounded-3xl p-10 text-center">
+                    <i class="fa-solid fa-truck text-6xl text-[#c8102e] mb-6"></i>
+                    <h3 class="text-3xl font-bold mb-3">Fleet &amp; Commercial</h3>
+                    <p class="text-gray-400">Multiple vehicles, corporate relocations, dealers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-black logo-font mb-16">How It Works</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>1. Submit details → Instant quote</div>
+                <div>2. We schedule pickup</div>
+                <div>3. GPS-tracked delivery</div>
+                <div>4. Safe arrival + proof of delivery</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GET QUOTE -->
+    <section id="quote" class="py-24 bg-gradient-to-br from-red-950 to-black">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-black logo-font mb-8">Get an Instant Quote</h2>
+            <p class="mb-12 text-xl">Tell us where your vehicle needs to go</p>
+            
+            <div class="max-w-2xl mx-auto bg-white/10 backdrop-blur-3xl rounded-3xl p-12">
+                <!-- Simple interactive form -->
+                <form id="quoteForm" class="space-y-8">
+                    <div class="grid grid-cols-2 gap-6">
+                        <input type="text" placeholder="Pickup City (e.g. Cape Town)" class="bg-black border border-red-900/50 rounded-2xl px-6 py-5">
+                        <input type="text" placeholder="Delivery City (e.g. Johannesburg)" class="bg-black border border-red-900/50 rounded-2xl px-6 py-5">
+                    </div>
+                    <button type="button" onclick="fakeQuote()" 
+                            class="w-full py-6 bg-[#c8102e] text-2xl font-bold rounded-3xl">GET QUOTE IN 10 SECONDS</button>
+                </form>
+                <div id="quoteResult" class="hidden mt-8 text-3xl font-bold"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-16 border-t border-red-900/30">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-2xl font-medium mb-4">FLYING SQUAD AUTO LOGISTICS</p>
+            <p class="text-gray-400">Nationwide • Insured • GPS Tracked • 24/7 Support</p>
+            <p class="mt-12 text-sm text-gray-500">Demo website built for portfolio / client presentation • Ready for GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already loaded
+        function fakeQuote() {
+            const result = document.getElementById('quoteResult');
+            result.classList.remove('hidden');
+            result.innerHTML = `✅ Quote generated!<br><span class="text-[#c8102e] text-5xl">R 8,450 – R 12,900</span><br><span class="text-sm mt-4 block">Cape Town → Johannesburg • 3–5 days</span>`;
+            
+            setTimeout(() => {
+                alert("🎉 In a real site this would connect to WhatsApp or email. Demo complete!");
+            }, 800);
+        }
+        
+        // Theme toggle (keeps your original functionality)
+        const toggle = document.getElementById('themeToggle');
+        toggle.addEventListener('change', () => {
+            if (toggle.checked) {
+                document.documentElement.style.setProperty('color-scheme', 'light');
+                document.body.style.backgroundColor = '#f8f8f8';
+                document.body.style.color = '#111';
+            } else {
+                document.documentElement.style.setProperty('color-scheme', 'dark');
+                document.body.style.backgroundColor = '#000';
+                document.body.style.color = '#fff';
+            }
+        });
+        
+        console.log('%c✅ Flying Squad Auto Logistics high-design demo loaded!', 'color:#c8102e; font-size:18px; font-weight:bold');
+    </script>
+</body>
+</html>
